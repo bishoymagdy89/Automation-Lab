@@ -23,12 +23,14 @@ print(a.rstrip("@#"))
 print(a.lstrip("@#"))
 
 # title()
+# Capitalizes the first letter of every word
 
-b = "I Love 2d Graphics and 3g Technology and python"
+b = "I Love 2d Graphics and 3g Technology and python" 
 
 print(b.title())
 
 # capitalize()
+# Capitalizes only the first letter of the entire string
 
 b = "I Love 2d Graphics and 3g Technology and python"
 
@@ -56,6 +58,6 @@ print(g.upper())
 
 # lower()
 
-h = "Osama"
+h = "OSama"
 
 print(h.lower())

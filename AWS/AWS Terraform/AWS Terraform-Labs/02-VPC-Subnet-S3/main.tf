@@ -18,12 +18,12 @@ resource "aws_vpc" "lab_vpc" {
   }
 }
 
-resource "aws_subnet" "main" {
+resource "aws_subnet" "first_public" {
   vpc_id     = aws_vpc.lab_vpc.id
   cidr_block = "10.0.1.0/24"
 
   tags = {
-    Name = "first_subnet"
+    Name = "first_public_subnet"
   }
 }
 
@@ -37,7 +37,3 @@ resource "aws_s3_bucket" "bucket-test" {
     Environment = "Dev"
   }
 }
-
-
-
-

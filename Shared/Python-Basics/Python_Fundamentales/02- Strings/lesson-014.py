@@ -7,6 +7,9 @@
 a = "I Love Python and PHP and MySQL"
 print(a.split())
 
+aa = "ILovePythonandPHPandMySQL"
+print(aa.split())
+
 b = "I-Love-Python-and-PHP-and-MySQL"
 print(b.split("-"))
 

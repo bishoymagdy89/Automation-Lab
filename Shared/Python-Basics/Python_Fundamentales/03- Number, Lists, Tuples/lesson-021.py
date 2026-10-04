@@ -81,7 +81,7 @@ print(myAwesomeList)
 
 myAwesomeList = ["One", "Two", "One", 1, 100.5, True]
 
-myAwesomeList[0:3] = []
+myAwesomeList[0:3] = [] #remove the first three elements
 
 print(myAwesomeList)
 # [1, 100.5, True]

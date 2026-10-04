@@ -10,24 +10,6 @@ provider "aws" {
 }
 
 
-resource "aws_vpc" "lab_vpc" {
-  cidr_block = "10.0.0.0/16"
-
-  tags = {
-    Name = "custom_vpc"
-  }
-}
-
-resource "aws_subnet" "first_public" {
-  vpc_id     = aws_vpc.lab_vpc.id
-  cidr_block = "10.0.1.0/24"
-
-  tags = {
-    Name = "first_public_subnet"
-  }
-}
-
-
 # Create S3 
 resource "aws_s3_bucket" "bucket-test" {
   bucket = "my-tf-test-bucket-bishoy-1"
@@ -37,3 +19,14 @@ resource "aws_s3_bucket" "bucket-test" {
     Environment = "Dev"
   }
 }
+
+
+# Create S3 Bucket In Account-Regional Namespace
+data "aws_caller_identity" "current" {}
+data "aws_region" "current" {}
+
+resource "aws_s3_bucket" "example" {
+  bucket           = format("my-tf-test-bucket-%s-%s-an", data.aws_caller_identity.current.account_id, data.aws_region.current.region)
+  bucket_namespace = "account-regional"
+}
+

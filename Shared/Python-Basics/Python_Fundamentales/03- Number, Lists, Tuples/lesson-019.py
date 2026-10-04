@@ -34,3 +34,19 @@ print("Real Part Is: {}".format(myComplexNumber.real))
 
 print("Imaginary Part Is: {}".format(myComplexNumber.imag))
 # Imaginary Part Is: 6.0
+
+
+# [1] You Can Convert From Int To Float or Complex
+# [2] You Can Convert From Float To Int or Complex
+# [3] You Cannot Convert Complex To Any Type
+
+print(100)
+print(float(100))
+print(complex(100))
+
+print(10.50)
+print(int(10.50))
+print(complex(10.50))
+
+print(10 + 9j)
+print(int(10 + 9j))  # Error: Cannot Convert Complex To Int

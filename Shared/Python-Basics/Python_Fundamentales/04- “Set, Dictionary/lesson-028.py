@@ -10,7 +10,8 @@
 # 5- symmetric_difference()
 # 6- symmetric_difference_update()
 
-
+print ("=" *40) # separator
+print ("### 1- difference() ###")
 # ==========================================================
 # 1- difference()
 # ==========================================================
@@ -52,7 +53,8 @@ print(a)
 #
 # The original set "a" stays unchanged.
 
-
+print ("=" *40) # separator
+print ("### 2- difference_update() ###")
 # ==========================================================
 # 2- difference_update()
 # ==========================================================
@@ -92,7 +94,6 @@ print(c)
 # After:
 # c = {4}
 
-
 # ==========================================================
 # difference() VS difference_update()
 # ==========================================================
@@ -105,7 +106,8 @@ print(c)
 # -> Calculates the difference.
 # -> Original set IS changed.
 
-
+print ("=" *40) # separator ==============================
+print ("### 3- intersection() ###")
 # ==========================================================
 # 3- intersection()
 # ==========================================================
@@ -147,7 +149,8 @@ print(e)
 #
 # e stays unchanged.
 
-
+print ("=" *40) # separator ==============================
+print ("### 4- intersection_update() ###")
 # ==========================================================
 # 4- intersection_update()
 # ==========================================================
@@ -197,7 +200,8 @@ print(g)
 # -> Keeps common items.
 # -> Original set IS changed.
 
-
+print ("=" *40) # separator ==============================
+print ("### 5- symmetric_difference() ###")
 # ==========================================================
 # 5- symmetric_difference()
 # ==========================================================
@@ -243,7 +247,8 @@ print(i)
 #
 # i itself remains unchanged.
 
-
+print ("=" *40) # separator ==============================
+print ("### 6- symmetric_difference_update() ###")
 # ==========================================================
 # 6- symmetric_difference_update()
 # ==========================================================

@@ -7,9 +7,9 @@
 # ----------------------------------------------------------
 
 # Set is a collection of items.
-#
+
 # [1] Set Items Are Enclosed in Curly Braces {}
-#
+
 # [2] Set Items Are Not Ordered And Not Indexed
 #
 # [3] Set Indexing And Slicing Can't Be Done
@@ -45,7 +45,7 @@ print(mySetOne)
 #
 # The output could appear in a different order.
 
-
+print ("=" *40) # separator ==============================
 # ----------------------------------------------------------
 # We cannot access a Set item using an Index
 # ----------------------------------------------------------
@@ -93,7 +93,6 @@ mySetTwo = {1, 2, 3, 4, 5, 6}
 # But a Set has no indexes.
 # Therefore slicing cannot be used with Sets.
 
-
 # ==========================================================
 # 3. Set Has Only Immutable Data Types
 # ==========================================================
@@ -140,7 +139,7 @@ print(mySetThree)
 # The order of the output is not guaranteed because Sets
 # are unordered.
 
-
+print ("=" *40) # separator ==============================
 # ==========================================================
 # 4. Set Items Are Unique
 # ==========================================================

@@ -21,7 +21,7 @@
 #
 # [2] Dictionary items contain Key : Value
 #
-# [3] Dictionary Key must be Immutable
+#  
 #     يعني الـ Key مينفعش يكون نوع بيانات قابل للتغيير.
 #
 #     Allowed:
@@ -40,7 +40,7 @@
 #    آخر Value 
 #    هي اللي هتتحفظ.
 # [6] We access Dictionary elements using the Key.
-#     مش باستخدام Index زي الـ List.
+#     مش باستخدام ال Index زي الـ List.
 
 
 # ============================================================

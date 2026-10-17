@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../01-Terraform-output-example"
+		},
+		{
+			"path": "../02-Random-Password"
+		},
+		{
+			"path": "../03-Random-string"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../../Shared/Python-Basics/Python_Fundamentales/05- Boolean, Operators, Input"
+		}
+	],
+	"settings": {}
+}

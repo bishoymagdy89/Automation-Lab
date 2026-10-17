@@ -5,13 +5,24 @@ provider "aws" {
   region = "us-east-1"
 }
 
+# Configure the AWS vpc
+resource "aws_vpc" "main" {
+  cidr_block = "10.0.0.0/16"
+
+
+  tags = {
+    Name = "my-vpc"
+  }
+}
+
+
 # Configure the AWS vpc subnet
 resource "aws_subnet" "public-subnet" {
   vpc_id     = aws_vpc.main.id
   cidr_block = "10.0.1.0/24"
 
   tags = {
-    Name = "Main"
+    Name = "public-subnet"
   }
 }
 
@@ -40,4 +51,16 @@ resource "aws_vpc_security_group_egress_rule" "allow_all_traffic_ipv4" {
   security_group_id = aws_security_group.allow_tls.id
   cidr_ipv4         = "0.0.0.0/0"
   ip_protocol       = "-1" # semantically equivalent to all ports
+}
+
+# Configure AWS Instance - EC2
+resource "aws_instance" "web" {
+  ami                         = "resolve:ssm:/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64"
+  instance_type               = "t3.micro"
+  subnet_id                   = aws_subnet.public-subnet-1.id
+  associate_public_ip_address = true
+  vpc_security_group_ids      = [aws_security_group.allow_tls.id]
+  tags = {
+    Name = "first-instance-web"
+  }
 }

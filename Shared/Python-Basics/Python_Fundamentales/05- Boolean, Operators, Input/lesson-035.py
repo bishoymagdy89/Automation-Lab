@@ -42,10 +42,10 @@ print(z)
 # Updating a Variable
 # ============================================================
 
-x = 10
-y = 20
+x = 10 
+y = 20 
 
-x = x + y
+x = x + y 
 
 print(x)
 
@@ -55,7 +55,7 @@ print(x)
 # Output:
 # 30
 
-
+print ("=" * 50)
 # ============================================================
 # += Assignment Operator
 # ============================================================
@@ -69,8 +69,11 @@ print(x)
 # x += y
 
 
-x = 10
-y = 20
+x = 10 # Var One 
+y = 20 # Var two
+
+# Var one = Self [opetrator] Var Two
+# Var one [opetrator]= Var Two
 
 x += y
 
@@ -92,6 +95,7 @@ print(x)
 x = 10
 y = 20
 
+# x - y (  وخزنهم لي في  ) variable X
 x -= y
 
 print(x)

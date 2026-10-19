@@ -39,7 +39,7 @@ print(type(str(a)))
 
 # str() can convert values such as integers and floats into strings.
 
-
+print ("=" * 50)
 # ==================================
 # 2. Convert To Tuple => tuple()
 # ==================================
